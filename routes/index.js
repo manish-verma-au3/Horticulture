@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'This is master branch' });
 });
 
+router.get('/test', function(req, res, next) {
+  res.render('index', { title: 'This is test branch' });
+});
+
 module.exports = router;
